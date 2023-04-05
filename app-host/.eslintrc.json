@@ -1,0 +1,3 @@
+{
+  "extends": ["@federated-pokemon/eslint-config-next"]
+}
