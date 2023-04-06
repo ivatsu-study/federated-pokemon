@@ -3,19 +3,18 @@
   "version": "1.0.0",
   "description": "Exploring Micro-Frontends with module-federation for Next.js",
   "scripts": {
-    "start": "concurrently \"cd app-host; npm run dev\""
+    "start": "concurrently \"cd home-nextjs-module; npm run dev\" \"cd remote-nextjs-module; npm run dev\""
   },
   "repository": "git@github.com:ivatsu-study/federated-pokemon.git",
   "author": "IvaTsu <ivan.tsud@tretton37.com>",
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "app-host",
-    "libs/*"
+    "home-nextjs-module",
+    "remote-nextjs-module"
   ],
   "dependencies": {
     "concurrently": "^8.0.1",
-    "@module-federation/nextjs-mf": "^6.2.2",
     "webpack": "^5.78.0"
   }
 }
