@@ -9,7 +9,7 @@ module.exports = {
           name: "remote_nextjs_module",
           filename: "static/chunks/remoteEntry.js",
           exposes: {
-            "./Test": "./components/Test.js",
+            "./Pikachu": "./components/Pikachu.js",
           },
         })
       );

@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 
-const Test = dynamic(
+const Pikachu = dynamic(
   () => {
-    return import("remote_nextjs_module/Test");
+    return import("remote_nextjs_module/Pikachu");
   },
   { ssr: false }
 );
@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <main>
         <h1>Welcome to Home Module!</h1>
-        <Test />
+        <Pikachu />
       </main>
     </div>
   );

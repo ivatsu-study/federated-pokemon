@@ -1,11 +1,11 @@
-import Test from "../components/Test";
+import Pikachu from "../components/Pikachu";
 
 export default function Home() {
   return (
     <div>
       <main>
         <h1>Welcome to Remote Module!</h1>
-        <Test />
+        <Pikachu />
       </main>
     </div>
   );
