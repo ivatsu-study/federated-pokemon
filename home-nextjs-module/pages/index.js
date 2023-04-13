@@ -4,16 +4,14 @@ const Pikachu = dynamic(
   () => {
     return import("remote_nextjs_module/Pikachu");
   },
-  { ssr: false }
+  { ssr: true }
 );
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <h1>Welcome to Home Module!</h1>
-        <Pikachu />
-      </main>
-    </div>
+    <main>
+      <h1>Welcome to Home Module!</h1>
+      <Pikachu />
+    </main>
   );
 }
