@@ -2,6 +2,14 @@ This is Micro-Frontends [Next.js](https://nextjs.org/) project bootstrapped with
 
 ## Getting Started
 
+### Prerequisites
+
+1. Add `.env.local` file to the `home-nextjs-module`:
+
+```shell
+NODE_ENV=development
+```
+
 To run everything in a host app:
 
 ```bash
