@@ -15,7 +15,7 @@ module.exports = {
           // }/remoteEntry.js`,
 
           // production
-          remote_nextjs_module: `remote_nextjs_module@federated-pokemon-remote-nextjs-module-1bvqlkphj-ivatsu-study.vercel.app/_next/static/${
+          remote_nextjs_module: `remote_nextjs_module@https://federated-pokemon-remote-nextjs-module.vercel.app/_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
         },
