@@ -35,3 +35,9 @@ pnpm start
 Open [http://localhost:8080](http://localhost:8080) with your browser to see the Home (host) app.
 
 Open [http://localhost:8081](http://localhost:8081) with your browser to see the Remote (exposed) app.
+
+## Production
+
+Open [federated-pokemon-home-nextjs-module](https://federated-pokemon-home-nextjs-module.vercel.app/) with your browser to see the Home (host) app.
+
+Open [federated-pokemon-remote-nextjs-module](https://federated-pokemon-remote-nextjs-module.vercel.app/) with your browser to see the Remote (exposed) app.
