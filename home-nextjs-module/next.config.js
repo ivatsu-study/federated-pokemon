@@ -9,7 +9,13 @@ module.exports = {
         name: "home_nextjs_module",
         filename: `static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
         remotes: {
-          remote_nextjs_module: `remote_nextjs_module@http://localhost:8081/_next/static/${
+          // development on localhost
+          // remote_nextjs_module: `remote_nextjs_module@http://localhost:8081/_next/static/${
+          //   isServer ? "ssr" : "chunks"
+          // }/remoteEntry.js`,
+
+          // production
+          remote_nextjs_module: `remote_nextjs_module@federated-pokemon-remote-nextjs-module-1bvqlkphj-ivatsu-study.vercel.app/_next/static/${
             isServer ? "ssr" : "chunks"
           }/remoteEntry.js`,
         },
