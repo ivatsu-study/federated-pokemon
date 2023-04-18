@@ -9,15 +9,11 @@ module.exports = {
         name: "home_nextjs_module",
         filename: `static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
         remotes: {
-          // development on localhost
-          // remote_nextjs_module: `remote_nextjs_module@http://localhost:8081/_next/static/${
-          //   isServer ? "ssr" : "chunks"
-          // }/remoteEntry.js`,
-
-          // production
-          remote_nextjs_module: `remote_nextjs_module@https://federated-pokemon-remote-nextjs-module.vercel.app/_next/static/${
-            isServer ? "ssr" : "chunks"
-          }/remoteEntry.js`,
+          remote_nextjs_module: `remote_nextjs_module@${
+            process.env.NODE_ENV === "production"
+              ? "https://federated-pokemon-remote-nextjs-module.vercel.app"
+              : "http://localhost:8081"
+          }/_next/static/${isServer ? "ssr" : "chunks"}/remoteEntry.js`,
         },
       })
     );
